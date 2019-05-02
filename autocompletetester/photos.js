@@ -41,6 +41,7 @@ function formatQueryString(paramsObject) {
 
 // Get the image and display it
 function displayPhoto(photoInfo, isOK) {
+    console.log(`url('${photoInfo.urls.regular}')`);
     let imageSource = `url('${photoInfo.urls.regular}')`;
     $('.photo-container').css('background-image', imageSource);
 }

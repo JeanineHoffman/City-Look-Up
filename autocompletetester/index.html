@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
     <title>Teleport Autocomplete Example</title>
+    <script src='https://static-assets.mapbox.com/gl-pricing/dist/mapbox-gl.js'></script>
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.54.0/mapbox-gl.js'></script>
     <link rel="prefetch stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800,600">
     <link rel="stylesheet" href="teleport-autocomplete.thinkful.css">
-
+    <link rel="stylesheet" href="main.css">
     <style>
       * { box-sizing: border-box; }
       html { font-size: 16px; }
@@ -30,15 +32,20 @@
     <div class="tp-autocomplete"><input id="city-search-form" type="text" class="my-input tp-ac__input" placeholder="Pick your city" autocomplete="off"><ul class="tp-ac__list"></ul></div>
 
     <h3>Result history:</h3>
+    <div id="map"></div>
     <div id="results-list" class="results"></div>
+    <section role="contentinfo" aria-label="Photo API results section" class="">
+      <div class="photo-container"></div>
+    </section>  
 
     <script src="//code.jquery.com/jquery.min.js"></script>
     <script src="teleport-autocomplete.thinkful.js"></script>
-    <script src="map.js"></script>
+    <script src="coolmap.js"></script>
     <script src="index.js"></script>
-    <script src="photos.js"></script>
     <script src="teleport.js"></script>
+    <script src="photos.js"></script>
     
+
     <script>
     //  var $results = document.querySelector('.results');
     // var appendToResult = $results.insertAdjacentHTML.bind($results, 'afterend');

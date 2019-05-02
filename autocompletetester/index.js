@@ -8,7 +8,7 @@ function watchForm() {
     appendToResult('<pre>' + JSON.stringify(value, null, 2) + '</pre>');
       //$('#city-search-form').change(event => {
         event.preventDefault();
-        const mapboxSearchTerm = value.title;
+        const mapboxSearchTerm = `${value.name}, ${value.admin1DivisionCode}`;
         const teleportSearchTerm = value.uaSlug;
         $("#results-list").empty();
         console.log(mapboxSearchTerm);

@@ -32,6 +32,7 @@ function displaySalaries(teleportTester) {
 
 function getCityStats(placeName) {
   console.log(placeName);
+
   let teleportBaseURL = 'https://api.teleport.org/api/urban_areas/slug:';
   const searchURLs = [`${teleportBaseURL}${placeName}/scores`, `${teleportBaseURL}${placeName}/salaries`];
   Promise.all(searchURLs.map(url =>
@@ -47,7 +48,9 @@ function getCityStats(placeName) {
     .then(data => {
       const qualityOfLife = data[0];
       const qualityOfSalaries = data[1];
+
       console.log(data[0], data[1])
+
       displayResults(qualityOfLife);
       // displaySalaries(qualityOfSalaries);
     })

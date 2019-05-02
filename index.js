@@ -2,16 +2,21 @@
 
 
 function watchForm() {
-    $('#city-search-form').submit(event => {
+   // var $results = document.querySelector('.results');
+    TeleportAutocomplete.init('.my-input').on('change', function(value) { console.log(value);
+    console.log(JSON.stringify(value, null, 2))
+      //$('#city-search-form').change(event => {
         event.preventDefault();
-        const mapboxSearchTerm = $('#city-search-form').find('option:selected').attr("name");
-        const teleportSearchTerm = $('#city-search-form .citySt').val();
+        const mapboxSearchTerm = [value.longitude, value.latitude];
+        const photoSearchTerm = `${value.name}, ${value.admin1DivisionCode}`;
+        const teleportSearchTerm = value.uaSlug;
         $("#results-list").empty();
-        getCityMap(mapboxSearchTerm);
+        loadMap(mapboxSearchTerm);
         getCityStats(teleportSearchTerm);
-        getCityPhoto(mapboxSearchTerm);        
+        getCityPhoto(photoSearchTerm);        
     });
 }
+    //var appendToResult = $results.insertAdjacentHTML.bind($results, 'afterend');
 
 
 $(watchForm);

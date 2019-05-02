@@ -15,6 +15,7 @@
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"> -->
   <link href="https://fonts.googleapis.com/css?family=Kalam|Knewave" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="teleport-autocomplete.thinkful.css">
   <link rel="stylesheet" type="text/css" media="screen" href="main.css">
 </head>
 
@@ -29,11 +30,15 @@
     <section role="contentinfo" aria-label="Photo API results section" class="js-img-cont">
       <div class="photo-container"></div>
     </section>  
-    <section role="form" aria-multiselectable="drop down forms">
+    <section class="auto-complete" role="submit" aria-multiselectable="autocomplete search bar">
+    <div class="tp-autocomplete"><input id="city-search-form" type="text" class="my-input tp-ac__input" placeholder="Pick your city" autocomplete="off"><ul class="tp-ac__list"></ul></div>
+    <div id="results-list" class="results"></div>
+    </section>
+    <!--<section role="form" aria-multiselectable="drop down forms">
       <form name="City, ST" id="city-search-form" value="">
         <select class="citySt" name="data types" aria-label="dropsdown data selection">
           <option name="portland, or" value="portland-or">Portland, OR</option>
-          <!-- <option name="san jose, ca" value="san-jose">San Jose, CA</option> -->
+          <option name="san jose, ca" value="san-jose">San Jose, CA</option> 
           <option name="boston, ma" value="boston">Boston, MA</option>
           <option name="new york, ny" value="new-york">NYC, NY</option>
           <option name="des moines, ia" value="des-moines">Des-Moines, IA</option>
@@ -46,6 +51,7 @@
         </select>
         <button type="submit" class="submitBtn" name="Start Search">Start Search</button>
       </form>
+
     </section>
     <section role="contentinfo" aria-label="results section" class="hidden js-map">
       <div id="map"></div>
@@ -60,9 +66,10 @@
 
 
   <script src="//code.jquery.com/jquery.min.js"></script>
+  <script src="teleport-autocomplete.thinkful.js"></script>
+  <script src="map.js"></script>
   <script src="index.js"></script>
   <script src="teleport.js"></script>
-  <script src="map.js"></script>
   <script src="photos.js"></script>
 </body>
 
