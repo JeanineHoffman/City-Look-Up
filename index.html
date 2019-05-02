@@ -27,7 +27,7 @@
     <p>Select your city below and begin your search!</p>
   </header>
   <main role="main">
-    <section role="contentinfo" aria-label="Photo API results section" class="">
+    <section role="contentinfo" aria-label="Photo API results section" class="js-img-cont">
       <div class="photo-container"></div>
     </section>  
     <section class="auto-complete" role="submit" aria-multiselectable="autocomplete search bar">
@@ -51,8 +51,9 @@
         </select>
         <button type="submit" class="submitBtn" name="Start Search">Start Search</button>
       </form>
-    </section>  -->
-    <section role="contentinfo" aria-label="results section" class="hidden">
+
+    </section>
+    <section role="contentinfo" aria-label="results section" class="hidden js-map">
       <div id="map"></div>
       <div id="js-error-message"></div>
     </section>
