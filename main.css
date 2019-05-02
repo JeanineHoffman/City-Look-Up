@@ -30,6 +30,10 @@ main{
   flex-direction: column;
   margin: 0 auto;
 }
+.heading{
+  width: 100%;
+}
+
 h1{
  text-align: center;
 }
