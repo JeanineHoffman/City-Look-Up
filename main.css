@@ -2,9 +2,9 @@
 
 /* GENERAL Styles                    
    -------------------------------- */
-:root {
+/* :root {
   --gray1: #777;
-}
+} */
 
 * {
   box-sizing: border-box;
@@ -12,9 +12,6 @@
   font-size: 16px;
 }
 
-.auto-complete{
-  height: 150px;
-}
 
 body{
   background-color: #f7f7f7;
@@ -35,7 +32,7 @@ main{
 }
 
 h1{
- text-align: center;
+  text-align: center;
 }
 header p {
   text-align: center;
@@ -44,12 +41,17 @@ header p {
   line-height: 1.8;
 }
 
-form{
+label{
+  font-size: 1.5rem;
   justify-content: center;
-  margin-top: 5%;
-  margin-bottom: 5%
 }
 
+.auto-complete input{
+  height: 10%;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  align-content: space-between;
+}
 
 
 
