@@ -4,12 +4,14 @@ function displayResults(teleportTester) {
   let resultsHTML = teleportTester.categories.map((item, index) => {
     let barWidth = `${item.score_out_of_10 * 10}%`;
     let score = Math.round(item.score_out_of_10 * 10) / 10;
-    return `<div id="item-${index}">
-      <div class="category-title"><span>${item.name}</span><span>${score}</span></div>
-      <div class="graph-cont">
-        <div class="bar-graph" style="width:${barWidth};"></div>
-      </div>
-    </div>`
+    return `<div class="item-wrapper">
+        <div id="item-${index}">
+          <div class="category-title"><span>${item.name}</span><span>${score}</span></div>
+          <div class="graph-cont">
+            <div class="bar-graph" style="width:${barWidth}; background-color:${item.color};"></div>
+          </div>
+        </div>
+      </div>`
   }).join('');
   $('#results-list').append(resultsHTML);
 };
@@ -22,7 +24,7 @@ function displaySalaries(teleportTester) {
     return `<div id="item-${index}">
     <div class="category-title"><span>${item.job.id}</span><span>${salary}</span></div>
     <div class="graph-cont">
-      <div class="bar-graph" style="width:${barWidth};"></div>
+      <div class="bar-graph" style="width:${barWidth}"></div>
     </div>
   </div>`
   }).join('');
