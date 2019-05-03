@@ -1,127 +1,121 @@
-
-
 /* GENERAL Styles                    
    -------------------------------- */
-/* :root {
-  --gray1: #777;
-} */
-
-* {
-  box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 16px;
-}
-
-
-body{
-  background-color: #f7f7f7;
-}
-
-.hidden {
-  display: none;
-}
-main{
-  max-width: 1000px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  margin: 0 auto;
-}
-.heading{
-  width: 100%;
-}
-
-h1{
-  text-align: center;
-}
-header p {
-  text-align: center;
-  font-size: 1.2em;
-  padding: 0 32%;
-  line-height: 1.8;
-}
-
-label{
-  font-size: 1.5rem;
-  justify-content: center;
-}
-
-.auto-complete input{
-  height: 10%;
-  margin-top: 10%;
-  margin-bottom: 5%;
-  align-content: space-between;
-}
-
-
-
-/* TELEPORT INFO Styles                    
-   -------------------------------- */
-.graph-cont {
-  width: 100%;
-  height: .6em;
-  background-color: #f7f7f7;
-}
-
-.bar-graph {
-  width: 10%;
-  height: 100%;
-  background-color: #555;
-}
-
-.score {
-  font-size: .9em;
-}
-
-.category-title {
-  margin-bottom: .5em;
-  display: flex;
-  justify-content: space-between;
-  font-size: .9em;
-}
-
-.category-title span:first-child {
-  font-weight: 600;
-}
-
-div[id*="item-"] {
-  width: 200px;
-  padding: .5em 0;
-  border-top: 1px dotted var(--gray1);
-}
-
-
-
-
-/* MAPBOX Styles                    
-   -------------------------------- */
- 
-   #map {
-    /* position: absolute;
-    top: 0;
-    bottom: 0; */
-    /* width: 100%; */
-    width: 480px;
-    height: 270px;
-    margin-top: 7%;
-    margin-bottom: 7%;
+   :root {
+    --gray1: #777;
   }
-
-.js-img-cont{
   
-  width: 38em;
-  height: 18em;
-}
-
-
-/* PHOTO API Styles
--------------------------------- */
-.photo-container {
-  width: 100%; 
-  height: 100%; 
-  background-image: url(assets/pdximg.JPG);
-  background-size: cover;
-  background-position: center;
-  /* background-image: url(assets/pdximg.JPG); */
-  background-repeat: no-repeat;
-}
+  * {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+  }
+  
+  .auto-complete{
+    height: 150px;
+  }
+  
+  body{
+    background-color: #f7f7f7;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  main{
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  h1{
+   text-align: center;
+  }
+  header p {
+    text-align: center;
+    font-size: 1.2em;
+    padding: 0 32%;
+    line-height: 1.8;
+  }
+  
+  label{
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 5%
+  }
+  
+  
+  
+  
+  /* TELEPORT INFO Styles                    
+     -------------------------------- */
+  .graph-cont {
+    width: 100%;
+    height: .6em;
+    background-color: #f7f7f7;
+  }
+  
+  .bar-graph {
+    width: 10%;
+    height: 100%;
+    background-color: #555;
+  }
+  
+  .score {
+    font-size: .9em;
+  }
+  
+  .category-title {
+    margin-bottom: .5em;
+    display: flex;
+    justify-content: space-between;
+    font-size: .9em;
+  }
+  
+  .category-title span:first-child {
+    font-weight: 600;
+  }
+  
+  div[id*="item-"] {
+    width: 200px;
+    padding: .5em 0;
+    border-top: 1px dotted var(--gray1);
+  }
+  
+  
+  
+  
+  /* MAPBOX Styles                    
+     -------------------------------- */
+   
+     #map {
+      /* position: absolute;
+      top: 0;
+      bottom: 0; */
+      /* width: 100%; */
+      width: 480px;
+      height: 270px;
+      margin-top: 7%;
+      margin-bottom: 7%;
+    }
+  
+  .js-img-cont{
+    
+    width: 38em;
+    height: 18em;
+  }
+  
+  
+  /* PHOTO API Styles
+  -------------------------------- */
+  .photo-container {
+    width: 100%; 
+    height: 100%; 
+    background-image: url(assets/pdximg.JPG);
+    background-size: cover;
+    background-position: center;
+    /* background-image: url(assets/pdximg.JPG); */
+    background-repeat: no-repeat;
+  }
+  
+  
