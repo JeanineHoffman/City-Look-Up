@@ -2,7 +2,9 @@
 .tp-autocomplete {
   position: relative;
   max-width: 25em; }
-
+placeholder{
+  color: #4a4a4a;
+}
 .tp-ac__input {
   width: 100%;
   padding: 0.25em;
