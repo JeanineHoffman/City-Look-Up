@@ -2,7 +2,7 @@
 
 
 function watchForm() {
-   // var $results = document.querySelector('.results');
+   var $results = document.querySelector('.results');
     TeleportAutocomplete.init('.my-input').on('change', function(value) { console.log(value);
     console.log(JSON.stringify(value, null, 2))
       //$('#city-search-form').change(event => {
