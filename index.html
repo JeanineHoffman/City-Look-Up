@@ -17,22 +17,30 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" href="teleport-autocomplete.thinkful.css">
   <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="media.css">
 </head>
 
 <body>
   <header role="banner" aria-label="title banner">
     <!-- working title -->
-    <h1>City Look-up</h1>
-    <p>Check out the liveability statistics and a zoomable map for cities you may be thinking about relocating to for work, family, or simply a wish to re-settle someplace new. Let City Look-up help you narrow your choices or just learn a bit more about each city.</p>
-    <p>Select your city below and begin your search!</p>
+    <section role="heading" aria-label="heading" class="heading">
+      <h1>City Look-up</h1>
+      <p>Check out the liveability statistics and a zoomable map for cities you may be thinking about relocating to for
+        work, family, or simply a wish to re-settle someplace new. Let City Look-up help you narrow your choices or just
+        learn a bit more about each city.</p>
+      <p>Select your city below and begin your search!</p>
+    </section>
   </header>
   <main role="main">
     <section role="contentinfo" aria-label="Photo API results section" class="js-img-cont">
       <div class="photo-container"></div>
-    </section>  
+    </section>
     <section class="auto-complete" role="submit" aria-multiselectable="autocomplete search bar">
-    <div class="tp-autocomplete"><input id="city-search-form" type="text" class="my-input tp-ac__input" placeholder="Pick your city" autocomplete="off"><ul class="tp-ac__list"></ul></div>
-    <div id="results-list" class="results"></div>
+      <div class="tp-autocomplete"><input id="city-search-form" type="text" class="my-input tp-ac__input"
+          placeholder="Pick your city" autocomplete="off">
+        <ul class="tp-ac__list"></ul>
+      </div>
+      <div id="results-list" class="results"></div>
     </section>
     <!--<section role="form" aria-multiselectable="drop down forms">
       <form name="City, ST" id="city-search-form" value="">

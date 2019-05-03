@@ -1,5 +1,3 @@
-
-
 /* GENERAL Styles                    
    -------------------------------- */
 :root {
@@ -154,22 +152,47 @@ div[id*="item-"] {
     margin-top: 7%;
     margin-bottom: 7%;
   }
-
-.js-img-cont{
   
-  width: 38em;
-  height: 18em;
-}
-
-
-/* PHOTO API Styles
--------------------------------- */
-.photo-container {
-  width: 100%; 
-  height: 100%; 
-  background-image: url(assets/pdximg.JPG);
-  background-size: cover;
-  background-position: center;
-  /* background-image: url(assets/pdximg.JPG); */
-  background-repeat: no-repeat;
-}
+  div[id*="item-"] {
+    width: 200px;
+    padding: .5em 0;
+    border-top: 1px dotted var(--gray1);
+  }
+  
+  
+  
+  
+  /* MAPBOX Styles                    
+     -------------------------------- */
+   
+     #map {
+      /* position: absolute;
+      top: 0;
+      bottom: 0; */
+      /* width: 100%; */
+      width: 480px;
+      height: 270px;
+      margin-top: 7%;
+      margin-bottom: 7%;
+    }
+  
+  .js-img-cont{
+    
+    width: 38em;
+    height: 18em;
+  }
+  
+  
+  /* PHOTO API Styles
+  -------------------------------- */
+  .photo-container {
+    width: 100%; 
+    height: 100%; 
+    background-image: url(assets/pdximg.JPG);
+    background-size: cover;
+    background-position: center;
+    /* background-image: url(assets/pdximg.JPG); */
+    background-repeat: no-repeat;
+  }
+  
+  
