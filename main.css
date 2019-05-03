@@ -1,6 +1,6 @@
 /* GENERAL Styles                    
    -------------------------------- */
-   :root {
+  :root {
     --gray1: #777;
   }
   
@@ -36,9 +36,7 @@
     font-size: 1.2em;
     padding: 0 32%;
     line-height: 1.8;
-  }
- 
- 
+  } 
   
   /* TELEPORT INFO Styles                    
      -------------------------------- */
