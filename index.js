@@ -12,6 +12,7 @@ function watchForm() {
         const teleportSearchTerm = value.uaSlug;
         if (value.hasOwnProperty('uaSlug')){
           $("#results-list").empty();
+          $("#living-results").empty();
           loadMap(mapboxSearchTerm);
           getCityStats(teleportSearchTerm);
           getCityPhoto(photoSearchTerm);        
