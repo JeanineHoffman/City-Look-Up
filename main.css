@@ -73,12 +73,7 @@ nav {
   z-index: 1000;
 }
 
-.photo-screen {
-  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAGElEQVQYV2NkYGD4z8DA4MfIwMDgywAEABKsAZ30/H6SAAAAAElFTkSuQmCC");
-  width: 100%;
-  height: 100%;
-  opacity: .36;  
-}
+
 
 h1 i {
   font-size: 1.6rem;
