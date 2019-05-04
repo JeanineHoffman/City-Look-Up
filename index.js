@@ -11,15 +11,15 @@ function watchForm() {
         const photoSearchTerm = `${value.name}, ${value.admin1DivisionCode}`;
         const teleportSearchTerm = value.uaSlug;
         if (value.hasOwnProperty('uaSlug')){
-        $("#results-list").empty();
-        loadMap(mapboxSearchTerm);
-        getCityStats(teleportSearchTerm);
-        getCityPhoto(photoSearchTerm);        
+          $("#results-list").empty();
+          loadMap(mapboxSearchTerm);
+          getCityStats(teleportSearchTerm);
+          getCityPhoto(photoSearchTerm);        
         }
         else {
           loadMap(mapboxSearchTerm)
           getCityPhoto(photoSearchTerm)
-          $("#results-list").html('<p class="search-error">There is no quality of life data for your selected city.</p>');
+          $("#results-list").html(`<p class="search-error">There is no quality of life data for ${value.title}.</p>`);
         }
     });
 }

@@ -21,55 +21,39 @@
 </head>
 
 <body>
+    <nav><h1>City Look-up</h1></nav>
+
   <header role="banner" aria-label="title banner">
     <!-- working title -->
     <section role="heading" aria-label="heading" class="heading">
-      <h1>City Look-up</h1>
+      <!-- <h1>City Look-up</h1> -->
       <p>Check out the liveability statistics and a zoomable map for cities you may be thinking about relocating to for
         work, family, or simply a wish to re-settle someplace new. Let City Look-up help you narrow your choices or just
         learn a bit more about each city.</p>
-      <p>Select your city below and begin your search!</p>
+      <p><strong>Select your city below and begin your search!</strong></p>
     </section>
   </header>
+
   <main role="main">
     <section role="contentinfo" aria-label="Photo API results section" class="js-img-cont">
       <div class="photo-container"></div>
     </section>
+
+    <section role="contentinfo" aria-label="results section" class="hidden js-map">
+      <div id="map"></div>
+    </section>
+  
     <section class="auto-complete" role="submit" aria-multiselectable="autocomplete search bar">
       <div class="tp-autocomplete"><input id="city-search-form" type="text" class="my-input tp-ac__input"
           placeholder="Pick your city" autocomplete="off">
         <ul class="tp-ac__list"></ul>
       </div>
-      <div id="results-list" class="results"></div>
     </section>
-    <!--<section role="form" aria-multiselectable="drop down forms">
-      <form name="City, ST" id="city-search-form" value="">
-        <select class="citySt" name="data types" aria-label="dropsdown data selection">
-          <option name="portland, or" value="portland-or">Portland, OR</option>
-          <option name="san jose, ca" value="san-jose">San Jose, CA</option> 
-          <option name="boston, ma" value="boston">Boston, MA</option>
-          <option name="new york, ny" value="new-york">NYC, NY</option>
-          <option name="des moines, ia" value="des-moines">Des-Moines, IA</option>
-          <option name="phoenix, az" value="phoenix">Phoenix, AZ</option>
-          <option name="salt lake city, ut" value="salt-lake-city">Salt Lake City, UT</option>
-          <option name="los angeles, ca" value="los-angeles">Los Angeles, CA</option>
-          <option name="san francisco, ca" value="san-francisco-bay-area">San Francisco, CA</option>
-          <option name="charlotte, nc" value="charlotte">Charlotte, NC</option>
-          <option name="seattle, wa" value="seattle">Seattle, WA</option>
-        </select>
-        <button type="submit" class="submitBtn" name="Start Search">Start Search</button>
-      </form>
-    -->
-    </section>
-    <section role="contentinfo" aria-label="results section" class="hidden js-map">
-      <div id="map"></div>
-      <div id="js-error-message"></div>
-    </section>
-    <section role="contentinfo" aria-label="Teleport API results section" class="hidden">
-      <div id="results-list"></div>
-    </section>
-
   
+    <section role="contentinfo" aria-label="Teleport API results section" class="hidden">
+      <div id="results-list" class="results"></div>
+      <div id="js-error-message"></div>
+    </section>  
   </main> 
 
 

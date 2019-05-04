@@ -12,6 +12,7 @@
 
 .auto-complete {
   height: 150px;
+  margin-top: 1.5em;
 }
 
 body {
@@ -34,6 +35,10 @@ h1 {
   text-align: center;
 }
 
+header {
+  margin-top: 6em;
+}
+
 header p {
   text-align: center;
   font-size: 1.2em;
@@ -53,6 +58,18 @@ form {
   font-weight: bold;
   color: red;
 }
+
+nav {
+  background-color: #f4f4f4;
+  position: fixed;
+  width: 100%;
+  box-shadow: 1px 3px 7px rgba(0,0,0,.16);
+  top: 0;
+  z-index: 1000;
+}
+
+
+
 
 /* TELEPORT INFO Styles                    
      -------------------------------- */
@@ -98,6 +115,60 @@ div[id*="item-"] {
     justify-content: space-around;
   } */
 
+
+/* MAPBOX Styles                    
+     -------------------------------- */
+#map {
+  /* position: absolute;
+      top: 0;
+      bottom: 0; */
+  /* width: 100%; */
+  /* width: 480px;
+  height: 270px; */
+  /* margin-top: 7%; */
+  /* margin-bottom: 7%; */
+  margin-top: 2px;
+}
+
+div[id*="item-"] {
+  padding: .5em 0;
+  border-top: 1px dotted var(--gray1);
+}
+
+.js-map {
+  width: 100%;
+  height: 240px;
+}
+
+.js-img-cont, #map {
+  /* width: 38em;
+  height: 18em; */
+  width: 100%;
+  height: 240px;
+}
+
+
+
+
+/* PHOTO API Styles
+    -------------------------------- */
+.photo-container {
+  width: 100%;
+  height: 100%;
+  background-image: url(assets/pdximg.JPG);
+  background-size: cover;
+  background-position: center;
+  /* background-image: url(assets/pdximg.JPG); */
+  background-repeat: no-repeat;
+}
+
+
+
+
+
+
+/* RESPONSIVE MEDIA QUERIES
+    -------------------------------- */
 @media only screen and (min-width: 576px) {
   .bar-graph {
     width: 10%;
@@ -129,45 +200,10 @@ div[id*="item-"] {
     flex-flow: row wrap;
     justify-content: space-around;
   }
-}
-
-/* MAPBOX Styles                    
-     -------------------------------- */
-#map {
-  /* position: absolute;
-      top: 0;
-      bottom: 0; */
-  /* width: 100%; */
-  width: 480px;
-  height: 270px;
-  margin-top: 7%;
-  margin-bottom: 7%;
-}
-
-div[id*="item-"] {
-  padding: .5em 0;
-  border-top: 1px dotted var(--gray1);
-}
-
-
-
-
-.js-img-cont {
-  width: 38em;
-  height: 18em;
-}
-
-
-
-
-/* PHOTO API Styles
-    -------------------------------- */
-.photo-container {
-  width: 100%;
-  height: 100%;
-  background-image: url(assets/pdximg.JPG);
-  background-size: cover;
-  background-position: center;
-  /* background-image: url(assets/pdximg.JPG); */
-  background-repeat: no-repeat;
+  /* .js-img-cont, #map {
+    height: 320px;
+  }   */
+  .js-img-cont {
+    height: 320px;
+  }
 }
