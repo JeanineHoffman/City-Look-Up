@@ -19,6 +19,12 @@ function displayResults(teleportTester) {
 function displayPhotos(teleportTester){
   console.log(teleportTester.photos[0]); //built in Teleport photo finder that replaced our photos.js file. displays object with image url and source
     let imageSource = `url('${teleportTester.photos[0].image.web}')`;
+    let photographer = teleportTester.photos[0].attribution.photographer;
+    let photoWebsite = teleportTester.photos[0].attribution.site;
+    let photoSourceURL = teleportTester.photos[0].attribution.source;
+    let attribution = `Image by ${photographer} via ${photoWebsite}`;
+    $('.photo-container .photo-caption .photo-link').attr("href", photoSourceURL);
+    $('.photo-container .photo-caption .photo-link').text(attribution);
     $('.photo-container').css('background-image', imageSource);
 }
 
