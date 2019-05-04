@@ -37,6 +37,13 @@
   </header>
 
   <main role="main">
+      <section class="auto-complete" role="submit" aria-multiselectable="autocomplete search bar">
+          <div class="tp-autocomplete"><input id="city-search-form" type="text" class="my-input tp-ac__input"
+              placeholder="Pick your city" autocomplete="off">
+            <ul class="tp-ac__list"></ul>
+          </div>
+        </section>
+
     <section role="contentinfo" aria-label="Photo API results section" class="js-img-cont">
       <div class="photo-container">
         <div class="photo-screen"></div>
@@ -47,15 +54,9 @@
       <div id="map"></div>
     </section>
   
-    <section class="auto-complete" role="submit" aria-multiselectable="autocomplete search bar">
-      <div class="tp-autocomplete"><input id="city-search-form" type="text" class="my-input tp-ac__input"
-          placeholder="Pick your city" autocomplete="off">
-        <ul class="tp-ac__list"></ul>
-      </div>
-    </section>
-  
     <section class="tp-bargraphs-container" role="contentinfo" aria-label="Teleport API results section" class="hidden">
       <div id="results-list" class="results"></div>
+      <div id="living-results" class="cost-of-living"></div>
       <div id="js-error-message"></div>
     </section>  
   </main> 

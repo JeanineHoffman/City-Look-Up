@@ -29,6 +29,7 @@ main {
   align-items: center;
   flex-direction: column;
   margin: 0 auto;
+  margin-bottom: 260px;
 }
 
 h1 {
