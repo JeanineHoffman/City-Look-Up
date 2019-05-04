@@ -75,7 +75,9 @@ nav {
   opacity: .36;  
 }
 
-
+h1 i {
+  font-size: 1.6rem;
+}
 
 
 /* TELEPORT INFO Styles                    
