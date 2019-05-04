@@ -49,7 +49,7 @@
     </section>
     <section role="contentinfo" aria-label="Photo API results section" class="js-img-cont">
 
-      <div class="photo-container">
+      <div class="photo-container" alt="random photo of the selected city">
         <p class="photo-caption">Images from Teleport API
         </p>
       </div>
@@ -62,7 +62,9 @@
 
       <section class="tp-bargraphs-container" role="contentinfo" aria-label="Teleport API results section"
         class="hidden">
+        <p class="life-header hidden">Quality of Life data for this city:</p>
         <div id="results-list" class="results"></div>
+        <p class="cost-header hidden">Cost of Living data for this city:</p>
         <div id="living-results" class="results"></div>
         <div id="js-error-message"></div>
       </section>
@@ -74,7 +76,6 @@
   <script src="map.js"></script>
   <script src="index.js"></script>
   <script src="teleport.js"></script>
-  <script src="photos.js"></script>
 </body>
 
 </html>

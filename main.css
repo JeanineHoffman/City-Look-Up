@@ -64,6 +64,21 @@ form {
   color: red;
 }
 
+.life-header {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  text-align: center;
+  font-size: 1.3em;
+}
+
+.cost-header {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  text-align: center;
+  font-size: 1.3em;
+}
+
+
 nav {
   background-color: #f4f4f4;
   position: fixed;
@@ -113,7 +128,7 @@ h1 i {
   width: 50%;
 } */
 
-div[id*="item-"] {
+div[id*="item-"] , div[id*="cost-"]{
   padding: .5em 0;
   border-top: 1px dotted var(--gray1);
 }
@@ -213,11 +228,17 @@ div[id*="item-"] {
     /* margin: 0px 40px; */
     width: 50%;
   }
-  div[id*="item-"] {
+  div[id*="item-"] , div[id*="cost-"]{
     width: 70%;
     margin: 0 15%;
   }
   #results-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+
+  #living-results {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
