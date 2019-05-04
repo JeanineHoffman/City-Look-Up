@@ -170,7 +170,10 @@ div[id*="item-"] {
 }
 
 
-
+.tp-bargraphs-container {
+  width: 100%;
+  padding: 0 2em;
+}
 
 
 
@@ -207,6 +210,12 @@ div[id*="item-"] {
     flex-flow: row wrap;
     justify-content: space-around;
   }
+
+  .tp-bargraphs-container {
+    width: auto;
+    padding: 0;
+  }
+
   /* .js-img-cont, #map {
     height: 320px;
   }   */
