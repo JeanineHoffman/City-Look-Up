@@ -1,5 +1,5 @@
 # City Look-up
-[Live Demo Here](https://thinkful-nights-weekends-codename-camel.github.io/citysearchAPIhack/)
+by [Jeanine](https://github.com/JeanineHoffman), [Ryan](https://github.com/ryan582647) and [Shawn](https://github.com/computershawn) | [Live Demo Here](https://thinkful-nights-weekends-codename-camel.github.io/citysearchAPIhack/)
 
 ![City Look-up app screenshot](https://raw.githubusercontent.com/thinkful-nights-weekends-codename-camel/citysearchAPIhack/master/city-lookup-app-screenshot.jpg)
 ---
