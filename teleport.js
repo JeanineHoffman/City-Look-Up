@@ -33,9 +33,7 @@ function livingCosts(teleportTester){
   return `<div class="item-wrapper">
   <div id="cost-${index}">
     <div class="category-title"><span>${item.label}:</span><span>$${amount}</span></div>
-    <div class="graph-cont">
-      <div class="bar-graph" style="width:${barWidth}; background-color: blue;"></div>
-    </div>
+    <div class="info-cont"></div>
   </div>
 </div>`
 }).join('');
