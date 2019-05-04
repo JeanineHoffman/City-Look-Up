@@ -21,6 +21,7 @@ function watchForm() {
           loadMap(mapboxSearchTerm)
           getCityPhoto(photoSearchTerm)
           $("#results-list").html(`<p class="search-error">There is no quality of life data for ${value.title}.</p>`);
+          $("#living-results").empty();
         }
     });
 }
